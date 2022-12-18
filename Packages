@@ -1,1 +1,14 @@
-
+Package: com.haidzkek.testforrepo
+Name: test for repo
+Version: 1.0
+Architecture: iphoneos-arm
+Description: just a test package
+Maintainer: haidzkek <barbersonjohn@gmail.com>
+Author: haidzkek <barbersonjohn@gmail.com>
+Section: Tweaks
+Depends: none
+Filename: debs/com.haidzkek.testforrepo
+Size: 0
+MD5sum: 
+SHA1: 
+SHA256: 
