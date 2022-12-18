@@ -1,2 +1,3 @@
 # haidzkek.github.io
-a horrible repo to add to sileo if you are high as fuck
+a terrible repo to add to sileo/cydia/zebra if you are high as fuck
+literally being held together by plastic straws
