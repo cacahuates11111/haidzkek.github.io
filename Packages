@@ -8,7 +8,7 @@ Author: haidzkek <barbersonjohn@gmail.com>
 Section: Tweaks
 Depends: none
 Filename: debs/com.haidzkek.testforrepo
-Size: 0
-MD5sum: 
-SHA1: 
-SHA256: 
+Size: 25296
+MD5sum: e2763f9c23d7a1f98880285f66cfa2
+SHA1: c6ce12f279239711be45774514442847cfa4276c
+SHA256: f9409d6d546e232e179f039b50532a9671cf2144375419770a680d39793d184a
