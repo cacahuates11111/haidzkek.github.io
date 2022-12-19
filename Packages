@@ -12,3 +12,20 @@ Size: 25296
 MD5sum: e2763f9c23d7a1f98880285f66cfa2
 SHA1: c6ce12f279239711be45774514442847cfa4276c
 SHA256: f9409d6d546e232e179f039b50532a9671cf2144375419770a680d39793d184a
+
+
+
+Package: xyz.cypwn.crackerxi
+Name: CrackerXI
+Version: 1.1.16
+Architecture: iphoneos-arm
+Description: Decrypts App Store apps!
+Maintainer: haidzkek
+Author: haidzkek
+Section: Tweaks
+Depends: mobilesubstrate
+Filename: xyz.cypwn.crackerxi_1.1.16_iphoneos-arm.deb
+Size: 198273
+MD5sum: f863cce087ca3603e423e3c5b3c29c12
+SHA1: 65ed2de520e61064ba099452f6f352533bdafc39
+SHA256: 5075d3ef14f6385662fc6e5f568ac81dd2a33c3a901cc36691bc9122685eb838  
