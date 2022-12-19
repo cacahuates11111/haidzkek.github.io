@@ -6,7 +6,7 @@ Description: just a test package
 Maintainer: haidzkek <barbersonjohn@gmail.com>
 Author: haidzkek <barbersonjohn@gmail.com>
 Section: Tweaks
-Depends: none
+Depends: mobilesubstrate
 Filename: debs/com.haidzkek.testforrepo
 Size: 25296
 MD5sum: e2763f9c23d7a1f98880285f66cfa2
