@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Cydia Repo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-color: #000;
+			color: #fff;
+			font-family: Helvetica, Arial, sans-serif;
+			font-size: 16px;
+			text-align: center;
+		}
+		
+		#slider-container {
+			margin: 50px auto;
+			max-width: 500px;
+			position: relative;
+			width: 100%;
+		}
+		
+		#slider-bg {
+			background-color: #fff;
+			border-radius: 50px;
+			height: 50px;
+			margin: 0 auto;
+			position: relative;
+			width: 90%;
+			z-index: 1;
+		}
+		
+		#slider {
+			background-color: #007aff;
+			border-radius: 50px;
+			cursor: pointer;
+			height: 50px;
+			left: -50px;
+			position: absolute;
+			top: 0;
+			width: 50px;
+			z-index: 2;
+			transition: all 0.3s ease-out;
+		}
+		
+		#slider:hover {
+			background-color: #fff;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+		
+		 #slider.unlocked {
+			background-color: #1fe01f;
+			left: calc(100% - 50px);
+			transition: all 0.3s ease-out;
+		 }
+	</style>
+</head>
+<body>
+	<h1>Welcome to My Cydia Repo</h1>
+	<p>Slide to unlock the repo:</p>
+	<div id="slider-container">
+		<div id="slider-bg"></div>
+		<div id="slider"></div>
+	</div>
+	<script>
+		var slider = document.getElementById("slider");
+		var unlocked = false;
+		
+		slider.addEventListener("mousedown", function(event) {
+			event.preventDefault();
+			document.body.style.cursor = "pointer";
+		});
+		
+		document.addEventListener("mouseup", function(event) {
+			document.body.style.cursor = "default";
+			if (unlocked) {
+				window.location.href = "cydia://url/https://cydia.saurik.com/api/share#?source=https://haidzkek.github.io/";
+			} else {
+				slider.classList.remove("unlocked");
+				unlocked = false;
+			}
+		});
+		
+		slider.addEventListener("mousemove", function(event) {
+			if (event.buttons === 1) {
+				var x = event.clientX - slider.offsetLeft;
+				if (x < 0) {
+					x = 0;
+				}
+				if (x > slider.offsetWidth - slider.offsetHeight) {
+					x = slider.offsetWidth - slider.offsetHeight;
+				}
+				slider.style.left = x + "px";
+				if (x >= slider.offsetWidth - slider.offsetHeight) {
+					slider.classList.add("unlocked");
+					unlocked = true;
+				} else {
+					slider.classList.remove("unlocked");
+					unlocked = false;
+				}
+			}
+		});
+	</script>
+</body>
+</html>
